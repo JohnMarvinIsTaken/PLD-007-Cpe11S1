@@ -1,0 +1,47 @@
+(INFINITE)
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+	int sum=0, value=0;
+	cout<<"input your value:"<<endl;
+	cin>>value;
+	sum=sum+value;
+	while (value!=1) {
+		cout<<"the output is:"<<sum<<endl;
+		cout<<"input your value again"<<endl;
+		cin>>value;
+		sum=sum +value;
+	}
+	while (value == -1){
+		cout<<"-1 isn't allowed"<<endl;
+		return 0;
+	}
+}
+
+
+(FINITE)
+
+
+using namespace std;
+
+int main() {
+    int numbers[] = {26, 49, 498, 9387, 48962, 1, -1}; 
+    int sum = 0;
+    int value;
+
+    for (int i = 0; i < 7; i++) { 
+        value = numbers[i]; 
+        sum += value; 
+
+        if (value == -1) {
+            break; 
+        }
+    }
+
+    cout << "The sum of the array is: " << sum << endl; 
+
+    return 0;
+}
