@@ -1,0 +1,39 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	
+	int  a;
+	float physics, biology, math, computer, chemistry;
+	
+	cout<<"Enter your grade for Physics: ";
+	cin>>physics;
+	cout<<"Enter your grade for Biology: ";
+	cin>>biology;
+	cout<<"Enter your grade for Math: ";
+	cin>>math;
+	cout<<"Enter your grade for Computer: ";
+	cin>>computer;
+	cout<<"Enter your grade for Chemistry: ";
+	cin>>chemistry;
+	
+	a = (physics + biology + math + computer + chemistry)/5;
+	
+	cout<<"________________________________________"<<endl;
+	
+	cout<<"Your General Average is: "<<a<<endl;
+	
+	cout<<"________________________________________"<<endl;
+	
+	if (a>=90){cout<<"Grade A";}
+	else if (a>=80 and a<=89){cout<<"Grade B";}
+	else if (a>=70 and a<=79){cout<<"Grade C";}
+	else if (a>=60 and a<=69){cout<<"Grade D";}
+	else if (a>=40 and a<=59){cout<<"Grade E";}
+	else {cout<<"Grade F";}
+	{
+	return 0;
+}
+}
