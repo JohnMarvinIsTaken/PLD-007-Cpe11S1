@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main(){
+	
+	int n = 1;
+	int sum = 0;
+	
+	for(n; n>=1 and n<=7; n++){
+		sum = n + 1;
+		cout<<n<<" ";
+	}
+	return 0;
+} 
