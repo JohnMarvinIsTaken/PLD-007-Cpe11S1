@@ -1,0 +1,56 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+ 
+    char ChessPiece[64];
+
+  ChessPiece[0] = 'R'; 
+	ChessPiece[1] = 'N'; 
+	ChessPiece[2] = 'B'; 
+	ChessPiece[3] = 'Q'; 
+	ChessPiece[4] = 'K'; 
+	ChessPiece[5] = 'B'; 
+	ChessPiece[6] = 'N'; 
+	ChessPiece[7] = 'R'; 
+	
+  ChessPiece[8] = 'P'; 
+	ChessPiece[9] = 'P';
+	ChessPiece[10] = 'P'; 
+	ChessPiece[11] = 'P'; 
+	ChessPiece[12] = 'P'; 
+	ChessPiece[13] = 'P'; 
+	ChessPiece[14] = 'P'; 
+	ChessPiece[15] = 'P'; 
+	
+    for (int C = 16; C < 48; C++) 
+	{
+    	ChessPiece[C] = ' '; 
+    }
+  ChessPiece[48] = 'P'; 
+	ChessPiece[49] = 'P'; 
+	ChessPiece[50] = 'P'; 
+	ChessPiece[51] = 'P'; 
+	ChessPiece[52] = 'P'; 
+	ChessPiece[53] = 'P'; 
+	ChessPiece[54] = 'P'; 
+	ChessPiece[55] = 'P'; 
+	
+  ChessPiece[56] = 'R'; 
+	ChessPiece[57] = 'N'; 
+	ChessPiece[58] = 'B'; 
+	ChessPiece[59] = 'Q'; 
+	ChessPiece[60] = 'K'; 
+	ChessPiece[61] = 'B'; 
+	ChessPiece[62] = 'N'; 
+	ChessPiece[63] = 'R'; 
+
+    for (int row = 0; row < 8; row++) {
+        for (int col = 0; col < 8; col++) {
+        	cout << ChessPiece[row * 8 + col] << " "; 
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
