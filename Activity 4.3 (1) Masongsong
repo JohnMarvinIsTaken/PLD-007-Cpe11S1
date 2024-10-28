@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main(){
+	string weekdays[] = {"sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"};
+	
+	int day;
+	cout << "Enter a NUMBER (0 - 6): ";
+	cin>>day;
+	
+	if (day >= 0 and day < 7)
+	{
+		cout << weekdays[day] <<endl;
+	} else {
+		cout <<"ERROR, no such day." <<endl;
+		return 0;
+	}
+	
+	return main();
+}
