@@ -1,0 +1,66 @@
+#include <iostream>
+using namespace std;
+
+int INTiSLOWER()
+{
+	char letter[5] = {'p','P', '5','!'};
+	
+	cout<<"according to islower: "<<endl;
+	int i;
+	for(i=0;i<=3;i++)
+	{
+		if(islower(letter[i]))
+		{
+			cout<<letter[i]<<"is a lowercase letter"<<endl;
+		}
+		else
+		{
+			cout<<letter[i]<<"is not a lowercase letter"<<endl;
+		}
+	}
+}
+
+int INTiUPPER()
+{
+	char letter[5] = {'D','d', '8','&'};
+	
+	cout<<"according to isupper: "<<endl;
+	int i;
+	for(i=0;i<=3;i++)
+	{
+		if(isupper(letter[i]))
+		{
+			cout<<letter[i]<<"is an uppercase letter"<<endl;
+		}
+		else
+		{
+			cout<<letter[i]<<"is not an uppercase letter"<<endl;
+		}
+	}
+}
+
+int INTiCONVERT()
+{
+		char letter[5] = {'u','7', '&','L'};
+	
+	cout<<"according to isupper: "<<endl;
+	int i;
+	for(i=0;i<=3;i++)
+	{
+		if(islower(letter[i]) and not isupper(letter[i]))
+		{
+			char b = toupper(letter[i]); 
+			cout<<letter[i]<<"is converted to "<<b<<endl;
+		}
+		else
+		{
+			char c = tolower(letter[i]);
+			cout<<letter[i]<<"is converted to "<<c<<endl;
+		}
+	}
+}
+int main(){
+	INTiSLOWER();
+	INTiUPPER();
+	INTiCONVERT();
+}
