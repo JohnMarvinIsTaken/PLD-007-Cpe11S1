@@ -1,0 +1,50 @@
+#include <iostream>
+#include <cctype>
+using namespace std;
+
+int main() {
+    char ch;
+    cout << "Enter any key in the keyboard: ";
+    cin >> ch;
+
+    if (islower(ch)) cout << "it is a lowercase letter." << endl;
+    else cout << "it is not a lowercase letter." << endl;
+
+    if (isupper(ch)) cout << "is an uppercase letter." << endl;
+    else cout << "is not an uppercase letter." << endl;
+    
+    cout << "if converted to uppercase, it will be: " << (char)toupper(ch) << endl;
+    cout << "if converted to lowercase, it will be: " << (char)tolower(ch) << endl;
+
+    if (isblank(ch)) cout << "it is a blank space." << endl;
+    else cout << "it is not a blank space." << endl;
+
+    if (isdigit(ch)) cout << "it is a digit." << endl;
+    else cout << "it is not a digit." << endl;
+
+    if (isalpha(ch)) cout << "it is a letter." << endl;
+    else cout << "it is not a letter." << endl;
+
+    if (isalnum(ch)) cout << "it is alphanumeric." << endl;
+    else cout << "it is not alphanumeric." << endl;
+
+    if (isxdigit(ch)) cout << "it is a hexadecimal digit." << endl;
+    else cout << "it is not a hexadecimal digit." << endl;
+
+    if (isspace(ch)) cout << "it is a whitespace character." << endl;
+    else cout << "it is not a whitespace character." << endl;
+
+    if (isgraph(ch)) cout << "it is a printable character that is not a space." << endl;
+    else cout << "it is not a printable character that is not a space." << endl;
+
+    if (iscntrl(ch)) cout << "it is a control character." << endl;
+    else cout << "it is not a control character." << endl;
+
+    if (isprint(ch)) cout << "it is a printable character including space." << endl;
+    else cout << "it is not a printable character including space." << endl;
+
+    if (ispunct(ch)) cout << "it is a punctuation character." << endl;
+    else cout << "it is not a punctuation character." << endl;
+
+    return 0;
+}
