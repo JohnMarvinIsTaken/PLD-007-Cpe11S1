@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+double getHypotenuse(double x, double y) {
+  double answer;
+  answer = sqrt(x * x + y * y);
+  return answer;
+}
+
+int main() {
+  double side_1;
+  double side_2;
+
+  cout << "Please enter the two sides of the triangle: " << endl;
+  cout << "Enter length: ";
+  cin >> side_1;
+  cout << "Enter width: ";
+  cin >> side_2;
+  cout << "The hypotenuse of the triangle is: " << getHypotenuse(side_1, side_2) << endl;
+  return 0;
+}
