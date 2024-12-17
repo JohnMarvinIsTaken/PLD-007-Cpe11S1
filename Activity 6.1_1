@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+double fahrenheit_to_celsius(double f_c) {
+    return (f_c - 32) * 5 / 9;
+}
+
+double celsius_to_fahrenheit(double c_f) {
+    return (c_f * 9 / 5) + 32;
+}
+
+int main() {
+    char choice;
+
+    cout << "Convert (Fahrenheit to Celsius or Celsius to Fahrenheit)? Enter F or C: ";
+    cin >> choice;
+
+    if (choice == 'F' || choice == 'f') {
+        cout << "Enter temperature in Fahrenheit: ";
+        double temperature;
+        cin >> temperature;
+        cout << "Temperature in Celsius: " << fahrenheit_to_celsius(temperature) << endl;
+    } 
+    else if (choice == 'C' || choice == 'c') {
+        cout << "Enter temperature in Celsius: ";
+        double temperature;
+        cin >> temperature;
+        cout << "Temperature in Fahrenheit: " << celsius_to_fahrenheit(temperature) << endl;
+    } 
+    else {
+        cout << "Invalid input!!!" << endl;
+    }
+
+    return 0;
+}
