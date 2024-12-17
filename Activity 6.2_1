@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+double getCube(double s) {
+  double result;
+  result = s * s * s;
+  return result;
+}
+
+int main() {
+  double s;
+  double result;
+  cout << "Please enter the length of the sides to get the area: ";
+  cin >> s;
+  result = getCube(s);
+  cout << "The area of the cube is: " << result << endl;
+  return 0;
+}
