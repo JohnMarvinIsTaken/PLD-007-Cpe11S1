@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+char choice;
+
+double dtp(double dollars, double rate) {
+    return dollars * rate;
+}
+
+double ptd(double pesos, double rate) {
+    return pesos / rate;
+}
+
+int main() {
+    int amount;
+    double rate;
+
+    cout << "Enter exchange rate, 1 Dollar = how much PHP?: ";
+    cin >> rate;
+    cout << "Convert Dollars to PHP or PHP to Dollars? (P / D): ";
+    cin >> choice;
+
+    if (choice == 'D' || choice == 'd') {
+        cout << "Please enter the amount in Dollars: ";
+        cin >> amount;
+        cout << "PHP: " << dtp(amount, rate) << endl;
+    } 
+    else if (choice == 'P' || choice == 'p') {
+        cout << "Please enter the amount in Pesos: ";
+        cin >> amount;
+        cout << "USD: " << ptd(amount, rate) << endl;
+    } 
+    else {
+        cout << "Invalid input!" << endl;
+    }
+
+    return 0;
+}
